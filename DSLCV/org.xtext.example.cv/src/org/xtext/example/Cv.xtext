@@ -1,0 +1,27 @@
+grammar org.xtext.example.Cv with org.eclipse.xtext.common.Terminals
+
+generate cv "http://www.xtext.org/example/Cv"
+
+Model:
+    'cv' '{'
+        'name' ':' name=STRING
+        'title' ':' title=STRING
+        'about' ':' about=STRING
+        'education' ':' education+=Education*
+        'experience' ':' experience+=Experience*
+        'contact' ':' contact=STRING
+    '}';
+
+Education:
+    'edu' '{'
+        'degree' ':' degree=STRING
+        'university' ':' university=STRING
+        'year' ':' year=INT
+    '}';
+
+Experience:
+    'exp' '{'
+        'position' ':' position=STRING
+        'company' ':' company=STRING
+        'year' ':' year=INT
+    '}';

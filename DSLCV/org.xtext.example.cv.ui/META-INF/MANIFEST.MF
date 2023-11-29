@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.xtext.example.cv.ui
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.example.cv.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.example.cv.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.xtext.example.cv,
+ org.xtext.example.cv.ide,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.14.300",
+ org.eclipse.ui.ide;bundle-version="3.18.500",
+ org.eclipse.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.builder
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.xtext.example.cv.ui.internal,
+ org.xtext.example.ui.contentassist,
+ org.xtext.example.ui.quickfix
+Bundle-Activator: org.xtext.example.cv.ui.internal.CvActivator

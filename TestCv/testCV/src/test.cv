@@ -1,0 +1,35 @@
+cv {
+    name: "Eliane "
+    title: "Software Engineer"
+    about: "Passionate about creating innovative software solutions."
+
+    education: 
+        edu {
+            degree: "Bachelor of Science in Computer Science"
+            university: "University of Example"
+            year: 2020
+        }
+
+        edu {
+            degree: "Master of Science in Software Engineering"
+            university: "Another University"
+            year: 2022
+        }
+    
+
+    experience: 
+        exp {
+            position: "Software Developer"
+            company: "Tech Solutions Inc."
+            year: 2020
+        }
+
+        exp {
+            position: "Senior Software Engineer"
+            company: "Innovation Co."
+            year: 2021
+        }
+    
+
+    contact: "john.doe@example.com"
+}

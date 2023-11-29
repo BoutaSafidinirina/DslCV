@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.xtext.example.cv
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.example.cv
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.example.cv; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.xtext.example.services,
+ org.xtext.example.cv,
+ org.xtext.example.cv.util,
+ org.xtext.example.generator,
+ org.xtext.example.parser.antlr.internal,
+ org.xtext.example.serializer,
+ org.xtext.example.scoping,
+ org.xtext.example,
+ org.xtext.example.cv.impl,
+ org.xtext.example.validation,
+ org.xtext.example.parser.antlr
+Import-Package: org.apache.log4j
